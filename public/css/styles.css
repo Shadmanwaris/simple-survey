@@ -45,6 +45,10 @@ h1.web_title {
 	margin-bottom: 100px;
 }
 
+.form-check-label {
+	color: #000;
+}
+
 
 .web_logo {
 	width: 75px;
