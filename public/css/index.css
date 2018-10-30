@@ -25,6 +25,14 @@ body {
   
 }
 
+.user_form_wrapper {
+  margin: 0 150px;
+}
+
+.form_feild {
+  width: 100% !important;
+}
+
 h1.web_title {
   font-size: 20px;
 }
@@ -122,12 +130,27 @@ h4 {
 }
 
 input[type=text] {
-  width: 18%;
+  width: 100% !important;
   padding: 12px 20px;
   margin: 10px 3px;
   box-sizing: border-box;
 }
 
+
+.login_form {
+  color: #000;
+}
+
+.asterik {
+  color: red;
+}
+
+.main-btn {
+  margin-top: 20px;
+  width: 180px;
+  background-color: #008CBA;
+  color: #fff;
+}
 
 
 /* chekcbox in select item style Start */
