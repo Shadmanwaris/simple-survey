@@ -1,22 +1,21 @@
 <html>
+
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
-</head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
 
 <body>
 
-<div class="danger">
-  <strong>
-  </strong>
-</div>
 
 
   <!-- scripts -->
   <script type="text/javascript">
     function movetoNext() {
       // document.getElementById("demo").innerHTML = "Hello World";
-       window.location.href="/nextPage" ;
+      window.location.href = "/nextPage";
     }
 
     var expanded = false;
@@ -34,21 +33,148 @@
     }
   </script>
 
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-1">
+          <img class="web_logo" src="./image.jpg" alt="logo">
+        </div>
+        <div class="col-11">
+          <div class="text-center">
+            <h1 class="web_title">PwC Survey</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-lg-12">
 
-  <div class="header">
-    <div class="left">
-      <img src="./image.jpg" alt="logo" />
+      
+    <div class="web_form_wrapper">
+      <form action="/nextPage" id="secPage" method="GET">
+        <div class="form-group row">
+          <label for="firstFormOne" class="col-8 col-form-label">Are your end user complaining about application
+            slowness?</label>
+          <div class="col-4">
+            <select class="form-control" id="firstFormOne">
+              <option>Select</option>
+              <option>Frequently</option>
+              <option>Sometimes</option>
+              <option>Never</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="firstFormTwo" class="col-8 col-form-label">Do you face application downtime in buisness hour?</label>
+          <div class="col-4">
+            <select class="form-control" id="firstFormTwo">
+              <option>Select</option>
+              <option>Frequently</option>
+              <option>Sometimes</option>
+              <option>Never</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="firstFormThree" class="col-8 col-form-label">Is your IT infrastructure used optimally?</label>
+          <div class="col-4">
+            <select class="form-control" id="firstFormThree">
+              <option>Select</option>
+              <option value="Partially">Partially</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="firstFormFour" class="col-8 col-form-label">Do you find difficulty in ROI calculation for future
+            investment due to buisness growth?</label>
+          <div class="col-4">
+            <select class="form-control" id="firstFormFour">
+              <option>Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-8 col-form-label">Buisness impacts as per you due to performance issues.</label>
+          <div class="col-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="one">
+              <label class="form-check-label" for="one">
+                Reduction in customer retention
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="two">
+              <label class="form-check-label" for="two">
+                Diminished Quality of Service
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="three">
+              <label class="form-check-label" for="three">
+                Hindering brand reputation
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="four">
+              <label class="form-check-label" for="four">
+                Less visibility in future business growth
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="five">
+              <label class="form-check-label" for="five>
+                Inadequate planning for infrastucture sizing and upgradation
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="six">
+              <label class="form-check-label" for="six">
+                Low profit mergin
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="seven">
+              <label class="form-check-label" for="seven">
+                Cut off in CoE setup and innovation budget
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="firstFormFive" class="col-8 col-form-label">Average yearly revenue loss as per you due to
+            performance issues.</label>
+          <div class="col-4">
+            <input class="form-control text-feild" type="text" id="name" required>
+
+            </select>
+          </div>
+        </div>
+
+      </form>
+      <div class="btn-div text-center">
+        <button class="btn main-btn" onclick="movetoNext()" id="myButton">Next</button>
+      </div>
     </div>
-    <div class="right_txt">
-      PwC Survey
-    </div>
-    <div class="both">
-    </div>
+</div>
+</div>
   </div>
 
-  <div class="center back-color">
-    <form  style="color:#fff;"action = "/nextPage" id="secPage" method ="GET">
-      <lable> 
+  <!-- <div class="center back-color">
+    <form style="color:#fff;" action="/nextPage" id="secPage" method="GET">
+      <lable>
         <h3>Are your end user complaining about application slowness?</h3>
       </lable>
       <select style="height: 38px;  width: 122px;">
@@ -60,8 +186,8 @@
       <br>
 
       <lable>
-        <h3>Do you face application downtime in buisness hour?</h3> 
-      </lable> 
+        <h3>Do you face application downtime in buisness hour?</h3>
+      </lable>
       <select style="height: 38px;  width: 122px;">
         <option>Select</option>
         <option value="Frequently">Frequently</option>
@@ -69,7 +195,7 @@
         <option value="Never">Never</option>
       </select>
       <br>
-            
+
       <lable>
         <h3>Is your IT infrastructure used optimally? </h3>
       </lable>
@@ -80,9 +206,9 @@
         <option value="No">No</option>
       </select>
       <br>
-            
+
       <lable>
-        <h3>Do you find difficulty in ROI calculation for future investment due to buisness growth?</h3> 
+        <h3>Do you find difficulty in ROI calculation for future investment due to buisness growth?</h3>
       </lable>
       <select style="height: 38px;  width: 122px;">
         <option>Select</option>
@@ -90,9 +216,9 @@
         <option value="No">No</option>
       </select>
       <br>
-      
+
       <lable>
-        <h3>Buisness  impacts as per you due to performance issues.</h3> 
+        <h3>Buisness impacts as per you due to performance issues.</h3>
       </lable>
       <br>
       <span class="multiselect">
@@ -100,7 +226,7 @@
           <select>
             <option>Select an option</option>
           </select>
-          <div class="overSelect">  
+          <div class="overSelect">
           </div>
         </div>
         <div id="checkboxes">
@@ -110,27 +236,30 @@
             <input type="checkbox" id="two" />Diminished Quality of Service</label>
           <label for="three">
             <input type="checkbox" id="three" />Hindering brand reputation</label>
-    		  <label for="four">
+          <label for="four">
             <input type="checkbox" id="four" />Less visibility in future business growth</label>
-    		  <label for="five">
+          <label for="five">
             <input type="checkbox" id="five" />Inadequate planning for infrastucture sizing and upgradation</label>
-    		  <label for="six">
+          <label for="six">
             <input type="checkbox" id="six" />Low profit mergin</label>
-    		  <label for="seven">
+          <label for="seven">
             <input type="checkbox" id="seven" />Cut off in CoE setup and innovation budget</label>
         </div>
       </span>
 
-      <lable><h3>Average yearly revenue loss as per you due to performance issues.</h3></lable><input type = "text"  id ="name" required><p id="demo" style="color:Red;"></p>
+      <lable>
+        <h3>Average yearly revenue loss as per you due to performance issues.</h3>
+      </lable><input type="text" id="name" required>
+      <p id="demo" style="color:Red;"></p>
       <br>
       <br>
       <br>
       <br>
-      <center>  
+      <center>
         <button class="button button2" onclick="movetoNext()" id="myButton">Next</button>
-      </center>  
+      </center>
     </form>
-  </div>
+  </div> -->
 </body>
-</html>
 
+</html>

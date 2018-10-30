@@ -8,6 +8,48 @@ form{
 	color:orangered;
 }
 
+h1.web_title {
+	font-size: 20px;
+}
+
+.web_title {
+	padding-top: 15px;
+}
+
+.web_form_wrapper {
+	padding: 40px 0 40px;
+	margin: 40px 150px;
+
+}
+
+.second_page_form_control {
+	margin-top: 10px;
+}
+
+.text-feild {
+	width: 100% !important;
+}
+
+.main-btn {
+	margin-top: 50px;
+	width: 180px;
+	background-color: #008CBA;
+	color: #fff;
+}
+
+.last-btn {
+	
+	width: 180px;
+	background-color: #008CBA;
+	color: #fff;
+	margin-bottom: 100px;
+}
+
+
+.web_logo {
+	width: 75px;
+}
+
 .back-color{
 	background-color: #fff;
 }
@@ -24,6 +66,10 @@ lable{
 	list-style: none;
 	width: 493px;
 	padding-right: 276px ;
+}
+
+.logo {
+	width: 75px;
 }
 
 .danger {

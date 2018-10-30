@@ -1,59 +1,60 @@
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link type="text/css" rel="stylesheet" href="./css/index.css" />
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
-    $("select.test1").change(function(){
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("select.test1").change(function () {
         var value1 = $(".test1 option:selected").val();
         $(".val1").attr("value", value1);
-          });
-	
-	$("select.test2").change(function(){
+      });
+
+      $("select.test2").change(function () {
         var value2 = $(".test2 option:selected").val();
-		$(".val2").attr("value", value2);
-    });
-	$("select.test3").change(function(){
+        $(".val2").attr("value", value2);
+      });
+      $("select.test3").change(function () {
         var value3 = $(".test3 option:selected").val();
-		$(".val3").attr("value", value3);
-    });
-	$("select.test4").change(function(){
+        $(".val3").attr("value", value3);
+      });
+      $("select.test4").change(function () {
         var value4 = $(".test4 option:selected").val();
-		$(".val4").attr("value", value4);
-    });
-	$("select.test5").change(function(){
+        $(".val4").attr("value", value4);
+      });
+      $("select.test5").change(function () {
         var value5 = $(".test5 option:selected").val();
-		$(".val5").attr("value", value5);
-		
-	   
-    });
-	
-	$("#submitClick").click(function(){
-	var v5 = parseInt($(".val5").val());
-	var v4 = parseInt($(".val4").val());
-	var v3 = parseInt($(".val3").val());
-	var v2 = parseInt($(".val2").val());
-	var v1 = parseInt($(".val1").val());
+        $(".val5").attr("value", value5);
 
-      	var totalScore =  ((v1+v2+v3+v4+v5)/5);
+
+      });
+
+      $("#submitClick").click(function () {
+        var v5 = parseInt($(".val5").val());
+        var v4 = parseInt($(".val4").val());
+        var v3 = parseInt($(".val3").val());
+        var v2 = parseInt($(".val2").val());
+        var v1 = parseInt($(".val1").val());
+
+        var totalScore = ((v1 + v2 + v3 + v4 + v5) / 5);
         alert(totalScore);
-        
-	});
-			
 
-});
+      });
 
-function myFunction() {
- // document.getElementById("demo").innerHTML = "Hello World";
- window.location.href="/lastPage" ;
-}
-</script>
+
+    });
+
+    function myFunction() {
+      // document.getElementById("demo").innerHTML = "Hello World";
+      window.location.href = "/lastPage";
+    }
+  </script>
 </head>
-<body>
+<!-- <body>
 <div class="danger">
   <p><strong></strong> </p>
 </div>
@@ -133,5 +134,108 @@ load/stress testing of application and analysis of captured performance metrics?
 <br>
 <center><button class="button button2" id="submitClick"> Submit </button> <button class="button button2" onclick="myFunction()"  id="myButton"> Next </button> </center> </div>
 </form>
+</body> -->
+
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <div class="col-1">
+          <img class="web_logo" src="./image.jpg" alt="logo">
+        </div>
+        <div class="col-11">
+          <div class="text-center">
+            <h1 class="web_title">PwC Survey</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-lg-12">
+
+
+        <div class="web_form_wrapper">
+          <form action = "/lastPage" id="secPage" method ="GET">
+            <div class="form-group row">
+              <label for="secondPageQuesOne" class="col-8 col-form-label">Do you analyze non-functional requirements for your
+                application to get the
+                idea of production user traffic, system response time, transaction rate etc? </label>
+              <div class="col-4">
+                <select class="form-control second_page_form_control" id="secondPageQuesOne">
+                  <option>Select</option>
+                  <option value="5">Partially</option>
+                  <option value="10">Yes</option>
+                  <option value="0">No</option>
+
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="secondPageQuesTwo" class="col-8 col-form-label">Do you have a streamlined performance baselining
+                process i.e regular
+                load/stress testing of application and analysis of captured performance metrics?</label>
+              <div class="col-4">
+                <select class="form-control second_page_form_control" id="secondPageQuesTwo">
+                  <option>Select</option>
+                  <option value="5">Partially</option>
+                  <option value="10">Yes</option>
+                  <option value="0">No</option>
+
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="secondPageQuesThree" class="col-8 col-form-label">Do you have proactive monitoring strategy to
+                monitor application performance?</label>
+              <div class="col-4">
+                <select class="form-control second_page_form_control" id="secondPageQuesThree">
+                  <option>Select</option>
+                  <option value="5">Partially</option>
+                  <option value="10">Yes</option>
+                  <option value="0">No</option>
+
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="secondPageQuesFour" class="col-8 col-form-label">Do you maintain any enterprise level dashboard to
+                check the system and infrastructure health?</label>
+              <div class="col-4">
+                <select class="form-control second_page_form_control" id="secondPageQuesFour">
+                  <option>Select</option>
+                  <option value="5">Partially</option>
+                  <option value="10">Yes</option>
+                  <option value="0">No</option>
+
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="secondPageQuesFive" class="col-8 col-form-label">Types of Performance re-engineering exercise you
+                follow in regular basis?</label>
+              <div class="col-4">
+                <select class="form-control second_page_form_control" id="secondPageQuesFive">
+                  <option>Select</option>
+                  <option value="5">Partially</option>
+                  <option value="10">Yes</option>
+                  <option value="0">No</option>
+
+                </select>
+              </div>
+            </div>
+          </form>
+          <div class="btn-div text-center">
+            <button class="btn main-btn" id="submitClick"> Submit </button> <button class="btn main-btn" onclick="myFunction()"
+              id="myButton"> Next </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
